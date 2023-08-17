@@ -16,6 +16,11 @@ dcl-proc main;
     responseHttpHeader varchar(10000);
   end-ds;
 
+  Exec Sql
+    SET OPTION COMMIT = *ALL, 
+               CLOSQLCSR = *ENDACTGRP,
+               ALWCPYDTA = *YES;
+
   // GET
   // The second parameter is the header
   Exec Sql
@@ -29,5 +34,15 @@ dcl-proc main;
     VALUES (SELECT * FROM TABLE (SYSTOOLS.HTTPGETCLOBVERBOSE(:url, null))) into :table;
 
   snd-msg table.responseMsg;
+
+  // GET
+  // Using qsys2.http_get
+  // It doesn't use Java as the others, so it's faster.
+  // If the url use HTTPS you have to have sufficient privileges to use the certificate store.
+  // If not, you will receive an error.
+  Exec Sql
+    VALUES QSYS2.HTTP_GET(:url, null) into :response;
+  
+  snd-msg response;
 
 end-proc;
