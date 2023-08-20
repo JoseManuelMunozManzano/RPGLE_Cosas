@@ -1,0 +1,9 @@
+                                            UNIQUE
+                R RORDMST
+                  ORDNO          3A
+                  ORDITMID       6S 0
+                  ORDITMNAM     15A
+                  ORDQTY         2S 0
+                  ORDDATE         L
+
+                K ORDNO

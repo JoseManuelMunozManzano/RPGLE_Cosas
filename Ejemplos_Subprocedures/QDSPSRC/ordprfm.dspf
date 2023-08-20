@@ -1,0 +1,11 @@
+     A*%%TS  SD  20221001  040011  JOMUMA      REL-V7R5M0  5770-WDS
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3)
+     A                                      CF03(03 'SALIR')
+     A          R FMT01
+     A*%%TS  SD  20221001  040011  JOMUMA      REL-V7R5M0  5770-WDS
+     A                                 10  3'PRODUCTO:'
+     A            F1NOMP        15A  O 10 17
+     A                                 22  2'F3=Salir'
+     A            F1ERR         60A  O 23  2COLOR(WHT)
+     A            F1NUMP         3   B 10 13
