@@ -1,0 +1,23 @@
+<!-- Llevar al IFS. En mi ejemplo, lo tengo en el IFS en un subdirectorio data -->
+<?xml version="1.0" encoding="UTF-8"?>
+<sample xmlns:tutorial="http://www.someurl.com"
+  xmlns:ref="http://www.someotherurl.com">
+  <tutorial:Customers>
+    <tutorial:Customer type='1'>
+      <ref:CustomerNumber>101</ref:CustomerNumber>
+      <ref:CustomerName>José M. Munoz</ref:CustomerName>
+      <ref:CreationDate>2024-01-15</ref:CreationDate>
+      <ref:Address>1010 Clara Street</ref:Address>
+      <ref:Country>Santa Monica</ref:Country>
+      <ref:Phone>123456789</ref:Phone>
+      <ref:Phone>555588881</ref:Phone>
+    </tutorial:Customer>
+    <tutorial:Customer type='2'>
+      <ref:CustomerNumber>102</ref:CustomerNumber>
+      <ref:CustomerName>Tania Munoz</ref:CustomerName>
+      <ref:CreationDate>2024-01-11</ref:CreationDate>
+      <ref:Address>7563 Maine Avenue</ref:Address>
+      <ref:Phone>999123471</ref:Phone>
+    </tutorial:Customer>  
+  </tutorial:Customers>
+</sample>
