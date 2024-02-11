@@ -1,0 +1,17 @@
+<!-- Llevar al IFS. En mi ejemplo, lo tengo en el IFS en un subdirectorio data -->
+<?xml version="1.0" encoding="UTF-8"?>
+<Customers>
+  <Customer>
+    <CustomerNumber>101</CustomerNumber>
+    <CustomerName>José M. Munoz</CustomerName>
+    <CreationDate>2024-01-15</CreationDate>
+    <Address>1010 Clara Street</Address>
+    <Country>Santa Monica</Country>
+  </Customer>
+  <Customer>
+    <CustomerNumber>102</CustomerNumber>
+    <CustomerName>Tania Munoz</CustomerName>
+    <CreationDate>2024-01-11</CreationDate>
+    <Address>7563 Maine Avenue</Address>
+  </Customer>  
+</Customers>
