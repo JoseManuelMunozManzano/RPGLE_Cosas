@@ -1,0 +1,8 @@
+        /*------------------------------------------------------------------------
+        * SRVUTIL - Binding Language
+        * Same name as the Service Program
+        *------------------------------------------------------------------------*/
+         STRPGMEXP PGMLVL(*CURRENT) LVLCHK(*YES)
+           EXPORT SYMBOL(SRVUTIL_Sum_A_And_B)
+           EXPORT SYMBOL(SRVUTIL_Sum_A_And_B_2)
+         ENDPGMEXP
