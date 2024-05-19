@@ -1,0 +1,33 @@
+     A                                      DSPSIZ(24 80 *DS3)
+     A                                      INDARA
+     A                                      PRINT
+     A          R SF01                      SFL
+     A            ID             5Y 0O  4  2EDTCDE(Z)
+     A            NOMBRE        20A  O  4  8
+     A            APELLIDOS     20A  O  4 29
+     A            FEDERACION    20A  O  4 50
+     A            ELO            4Y 0O  4 71EDTCDE(Z)
+     A          R CF01                      SFLCTL(SF01)
+     A                                      SFLSIZ(0015)
+     A                                      SFLPAG(0014)
+     A                                      CF03(03 'Fin Programa')
+     A                                      OVERLAY
+     A  31                                  SFLDSP
+     A  30                                  SFLDSPCTL
+     A  32                                  SFLCLR
+     A  80                                  SFLEND(*MORE)
+     A            RCDNR1         4S 0H      SFLRCDNBR
+     A                                  3  2' ID  '
+     A                                      DSPATR(UL)
+     A                                  3  8'NOMBRE              '
+     A                                      DSPATR(UL)
+     A                                  3 29'APELLIDOS           '
+     A                                      DSPATR(UL)
+     A                                  3 50'FEDERACION          '
+     A                                      DSPATR(UL)
+     A                                  3 71'ELO '
+     A                                      DSPATR(UL)
+     A          R CF01P
+     A                                 23  2'F3: Fin'
+     A                                      DSPATR(HI)
+     A            P2MSG         78A  O 24  2DSPATR(HI)
