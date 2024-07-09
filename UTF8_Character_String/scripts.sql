@@ -1,0 +1,16 @@
+DROP TABLE JOMUMA1.UTF8DATA;
+
+CREATE OR REPLACE TABLE JOMUMA1.UTF8DATA (
+	ID INTEGER GENERATED ALWAYS AS IDENTITY(START WITH 1, INCREMENT BY 1, NOCYCLE),
+	TEXT VARCHAR(100) CCSID 1208 DEFAULT '',
+	PRIMARY KEY (ID)
+) RCDFMT RUTF8DATA;
+
+-- Inserción en griego
+INSERT INTO JOMUMA1.UTF8DATA VALUES(default, 'Γεια πώς είναι τα πράγματα');
+
+-- Inserción en ruso
+INSERT INTO JOMUMA1.UTF8DATA VALUES(default, 'Привет, как дела?');
+
+-- Vemos que se visualizan los dos registros perfectamente, gracias al UNICODE
+SELECT * FROM JOMUMA1.UTF8DATA;
