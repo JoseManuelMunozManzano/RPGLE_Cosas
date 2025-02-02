@@ -1,0 +1,5 @@
+                R RNULLEXPF
+                  FIELD1         1S 0
+                  FIELD2        30A         ALWNULL
+                  FIELD3        15A         ALWNULL
+                K FIELD1
